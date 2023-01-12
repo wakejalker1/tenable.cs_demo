@@ -4,7 +4,7 @@ resource "aws_security_group" "allow_ssh" {
   tags   = var.default_tags
 
   ingress {
-    description      = "SSH from VPC"
+    description      = "SSH from the VPC"
     from_port        = 22
     to_port          = 22
     protocol         = "tcp"
